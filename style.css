@@ -1,0 +1,441 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 1;
+    border-bottom: 5px solid red;
+}
+
+.logo-container, .nav-links, .cart{
+    display: flex;
+    margin-left: 50px;
+}
+
+.logo-container {
+    flex: 1;
+} 
+
+.logo {
+    width: 100px;
+    padding: 20px;
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #111;
+    vertical-align: super;
+}
+
+.nav-btn:hover{
+    font-weight: bold;
+    color: red;
+}
+
+.cart {
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.appo {
+    display: flex;
+    padding: 5px 5px 3px 5px;
+    border: 2px solid red;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.appo-txt {
+    padding-right: 5px;
+}
+
+.appo:hover {
+    box-shadow: 0 0 8px #EC4C4C;
+    transform: scale(0.95);
+}
+
+.index-main {
+    margin-top: 10vh;
+    background-color: #fff;
+}
+
+.main-img {
+    width: 100%;
+    z-index: -1;
+}
+
+.well {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 58px;
+    text-shadow: 5px 5px 5px #111;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.intro-text {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: bold;
+    color: red
+}
+
+.text-header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 80px 0px 15px 0px;
+}
+
+.text-1, .text-2 {
+    flex: 1;
+    margin: 0px 20px 0px 20px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.grid-ser {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px 40px;
+}
+
+.ser {
+    cursor: pointer;
+    display: flex;
+    border: 3px solid red;
+    box-shadow: 3px 3px 3px #111;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.ser:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.ser-icon {
+    flex: 1;
+}
+
+.ser-text {
+    flex: 2;
+    text-align: justify;
+    margin: 10px
+}
+
+.ser-text-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icon {
+    width: 50px;
+    margin: 10px;
+}
+
+.catalogue {
+    margin: 0 20% 0 20%;
+    padding-bottom: 50px;
+}
+
+.offers {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+}
+
+.offer-des {
+    flex: 5;
+}
+
+.price {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.collapsible {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+  }
+
+  .catalogue-kind {
+    margin: 10px 0px 10px 0px;
+    box-shadow: 3px 3px 3px #111;
+    border: 3px solid red;
+    border-radius: 10px;
+  }
+
+footer {
+    height: 350px;
+    background-color: red;
+}
+
+.footer-content {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0px 30px 0px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.cnt {
+    padding: 5px 5px 5px 5px;
+}
+
+.contact-info {
+    flex: 1;
+    color: #fff;
+    font-size: 20px;
+}
+
+.soc-media {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.social-media {
+    flex: 1;
+}
+
+.contacts {
+    padding: 5px 0px 5px 0px;
+    display: flex;
+}
+
+.cnt-info {
+    padding-left: 10px;
+}
+
+.copy-right {
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.contact-us-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 70%;
+    padding: 20px;
+}
+
+.contact-us {
+    width: 100%;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: red;
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+.container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+
+.container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: red;
+    transition: 0.5s;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line {
+    height: 100%;
+}
+
+.container .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+.container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .row100 .inputBox.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+
+.container .row100 .inputBox textarea:focus + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox textarea:valid+ .text {
+    top: -35px;
+    left: -10px;
+} 
+
+.container .row100 .inputBox textarea:focus ~ .line {
+    height: 100%;
+}
+
+.container .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+
+.btn{
+    border: 3px solid #fff;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.submit-btn {
+    margin: 0 auto;
+    width: 130px;
+    padding-top: 50px;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+    border: 3px solid red;
+    border-radius: 10px;
+    color: red;
+    background-color: #fff;
+    box-shadow: 0 0 5px red;
+}
